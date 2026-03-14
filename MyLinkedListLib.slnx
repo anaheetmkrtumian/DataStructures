@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="MyBinaryTreeProj/MyBinaryTreeProj.csproj" Id="5d3320a7-6982-4f87-92c6-4305b63a8306" />
   <Project Path="MyLinkedListLib/MyLinkedListLib.csproj" />
   <Project Path="MyPostfixCalculatorProj/MyPostfixCalculatorProj.csproj" Id="93c08ed9-618e-41dc-80f1-0f63acc6543a" />
   <Project Path="MyQueueProj/MyQueueProj.csproj" Id="564f5e4d-883d-42a7-b70b-949e229a7ec4" />
