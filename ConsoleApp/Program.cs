@@ -152,6 +152,44 @@ namespace DataStructuresDemo
 
             Console.WriteLine("=== Demo Finished ===");
             Console.ReadLine();
+
+            #region HashTable Test
+            Console.WriteLine("=== HashTable Test ===");
+            MyHashTableLib.HashTable hashTable = new MyHashTableLib.HashTable(10);
+            string[] keys = { "apple", "banana", "orange", "grape", "melon" };
+            foreach (var key in keys)
+            {
+                hashTable.InsertAdditive(key);
+                Console.WriteLine($"Inserted (Additive) key: {key}");
+            }
+
+            Console.WriteLine("\nHash Table (Additive):");
+            string[] table = hashTable.GetTable();
+            for (int i = 0; i < table.Length; i++)
+            {
+                Console.WriteLine($"Index {i}: {table[i]}");
+            }
+
+            Console.WriteLine($"\nSearch 'banana': {hashTable.Search("banana")}");
+            Console.WriteLine($"Search 'kiwi': {hashTable.Search("kiwi")}\n");
+
+       
+            Console.WriteLine("=== Folding Hash Table Demo ===");
+            MyHashTableLib.HashTable foldingTable = new MyHashTableLib.HashTable(10);
+            foreach (var key in keys)
+            {
+                foldingTable.InsertFolding(key);
+                Console.WriteLine($"Inserted (Folding) key: {key}");
+            }
+
+            Console.WriteLine("\nHash Table (Folding):");
+            string[] fTable = foldingTable.GetTable();
+            for (int i = 0; i < fTable.Length; i++)
+            {
+                Console.WriteLine($"Index {i}: {fTable[i]}");
+            }
+            Console.WriteLine();
+            #endregion
         }
     }
 }
