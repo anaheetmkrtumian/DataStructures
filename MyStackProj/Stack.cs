@@ -19,13 +19,24 @@ public class MyStack<T>
 
     public T Pop()
     {
-        T value = _items.First();
+        if (_items.Count == 0)
+            throw new InvalidOperationException("Stack is empty");
+
+        T value = _items.Head.Value;
         _items.RemoveFirst();
         return value;
     }
 
     public T Peek()
     {
-        return _items.First();
+        if (_items.Count == 0)
+            throw new InvalidOperationException("Stack is empty");
+        return _items.Head.Value;
     }
-}
+
+    public void Clear()
+    {
+        _items.Clear();
+    }
+} 
+

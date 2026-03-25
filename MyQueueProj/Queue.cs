@@ -1,11 +1,13 @@
 ﻿using MyLinkedListLib;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace MyQueueProj;
 
 public class MyQueue<T> : IEnumerable<T>
 {
-    MyLinkedList<T> _items = new MyLinkedList<T>();
+    private MyLinkedList<T> _items = new MyLinkedList<T>();
 
     public void Enqueue(T item)
     {
@@ -14,20 +16,27 @@ public class MyQueue<T> : IEnumerable<T>
 
     public T Dequeue()
     {
-        T value = _items.First();
+        if (_items.Count == 0)
+            throw new InvalidOperationException("Queue is empty.");
+
+        T value = _items.Head.Value; 
         _items.RemoveFirst();
         return value;
     }
 
     public T Peek()
     {
-        return _items.First();
+        if (_items.Count == 0)
+            throw new InvalidOperationException("Queue is empty.");
+
+        return _items.Head.Value;
     }
 
-    public int Count()
+    public int Count
     {
-        return (_items.Count);
+        get { return _items.Count; }
     }
+
     public void Clear()
     {
         _items.Clear();
@@ -35,7 +44,7 @@ public class MyQueue<T> : IEnumerable<T>
 
     public IEnumerator<T> GetEnumerator()
     {
-        throw new NotImplementedException();
+        return _items.GetEnumerator();
     }
 
     IEnumerator IEnumerable.GetEnumerator()

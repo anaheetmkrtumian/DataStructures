@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyBinaryTreeProj\MyBinaryTreeProj.csproj" />
-    <ProjectReference Include="..\MyHashTableAlgorithm\MyHashTableAlgorithm.csproj" />
     <ProjectReference Include="..\MyLinkedListLib\MyLinkedListLib.csproj" />
     <ProjectReference Include="..\MyPostfixCalculatorProj\MyPostfixCalculatorProj.csproj" />
     <ProjectReference Include="..\MyQueueProj\MyQueueProj.csproj" />
