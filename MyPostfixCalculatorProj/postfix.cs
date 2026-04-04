@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PostfixAlgorithm;
 
-public class Program
+public class postfix
 {
     private static void Main()
     {

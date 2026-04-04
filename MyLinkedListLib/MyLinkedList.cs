@@ -17,7 +17,7 @@ public class MyLinkedList<T> : ICollection<T>
 
     public void Add(T item)
     {
-        AddLast(item); // ICollection convention
+        AddLast(item); 
     }
 
     public void AddFirst(T item)
@@ -47,6 +47,33 @@ public class MyLinkedList<T> : ICollection<T>
             Tail.Next = node;
             Tail = node;
         }
+
+        Count++;
+    }
+    public void AddBefore(MyLinkedListNode<T> targetNode, T item)
+    {
+        if (targetNode == null)
+            throw new ArgumentNullException(nameof(targetNode));
+
+        if (targetNode == Head)
+        {
+            AddFirst(item);
+            return;
+        }
+
+        var newNode = new MyLinkedListNode<T>(item);
+        var current = Head;
+
+        while (current != null && current.Next != targetNode)
+        {
+            current = current.Next;
+        }
+
+        if (current == null)
+            throw new InvalidOperationException("Node not found.");
+
+        newNode.Next = targetNode;
+        current.Next = newNode;
 
         Count++;
     }
