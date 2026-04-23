@@ -1,7 +1,8 @@
-﻿namespace MyBubbleSortProject;
+﻿using MySortingAlgorithms.Common; 
 
-public class MyBubbleSort<T>
-    where T:IComparable<T> 
+namespace MyBubbleSortProject;
+
+public class MyBubbleSort<T> : ISort<T> where T : IComparable<T>
 {
     public void Sort(T[] items)
     {

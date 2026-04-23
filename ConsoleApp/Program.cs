@@ -3,6 +3,9 @@ using MyLinkedListLib;
 using MyStackProj;
 using MyQueueProj;
 using MyBinaryTreeProj;
+using MyBubbleSortProject;
+using MyInsertionSortProject;
+using MySelectionSortProject;
 
 namespace DataStructuresDemo;
 
@@ -99,7 +102,42 @@ class Program
         Console.WriteLine($"Containment Check (99): {bst.Contains(99)}");
         #endregion
 
-        Console.WriteLine("\n============================================");
+        #region
+            int[] originalArray = { 64, 34, 25, 12, 22, 11, 90 };
+
+            Console.WriteLine("Սկզբնական զանգված՝ " + string.Join(", ", originalArray));
+            Console.WriteLine("\nԸնտրեք ալգորիթմը՝");
+            Console.WriteLine("1. Bubble Sort");
+            Console.WriteLine("2. Insertion Sort");
+            Console.WriteLine("3. Selection Sort");
+
+            string choice = Console.ReadLine() ?? "";
+            int[] arrayToSort = (int[])originalArray.Clone();
+
+            switch (choice)
+            {
+                case "1":
+                    var bubble = new MyBubbleSort<int>();
+                    bubble.Sort(arrayToSort);
+                    Console.WriteLine("Bubble Sort-ի արդյունքը՝ " + string.Join(", ", arrayToSort));
+                    break;
+                case "2":
+                    var insertion = new MyInsertionSort<int>();
+                    insertion.Sort(arrayToSort);
+                    Console.WriteLine("Insertion Sort-ի արդյունքը՝ " + string.Join(", ", arrayToSort));
+                    break;
+                case "3":
+                    var selection = new MySelectionSort<int>();
+                    selection.Sort(arrayToSort);
+                    Console.WriteLine("Selection Sort-ի արդյունքը՝ " + string.Join(", ", arrayToSort));
+                    break;
+                default:
+                    Console.WriteLine("Սխալ ընտրություն!");
+                    break;
+            }
+        #endregion
+
+    Console.WriteLine("\n============================================");
         Console.ReadLine();
     }
 }

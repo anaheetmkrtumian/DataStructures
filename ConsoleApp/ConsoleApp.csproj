@@ -9,9 +9,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyBinaryTreeProj\MyBinaryTreeProj.csproj" />
+    <ProjectReference Include="..\MyBubbleSortProject\MyBubbleSortProject.csproj" />
+    <ProjectReference Include="..\MyInsertionSortProject\MyInsertionSortProject.csproj" />
     <ProjectReference Include="..\MyLinkedListLib\MyLinkedListLib.csproj" />
     <ProjectReference Include="..\MyPostfixCalculatorProj\MyPostfixCalculatorProj.csproj" />
     <ProjectReference Include="..\MyQueueProj\MyQueueProj.csproj" />
+    <ProjectReference Include="..\MySelectionSortProject\MySelectionSortProject.csproj" />
     <ProjectReference Include="..\MyStackProj\MyStackProj.csproj" />
   </ItemGroup>
 

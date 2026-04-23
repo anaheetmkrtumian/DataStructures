@@ -1,8 +1,9 @@
-﻿namespace MySelectionSortProject
+﻿using MySortingAlgorithms.Common; 
+
+namespace MySelectionSortProject;
+
+public class MySelectionSort<T> : ISort<T> where T : IComparable<T>
 {
-    public class MySelectionSort<T>
-        where T : IComparable<T>
-    {
         public void Sort(T[] items)
         {
             for (int i = 0; i < items.Length - 1; i++)
@@ -31,4 +32,4 @@
             return t1.CompareTo(t2);
         }
     }
-}
+

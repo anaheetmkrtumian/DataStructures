@@ -10,6 +10,7 @@
   <Project Path="MyQueueProj/MyQueueProj.csproj" Id="564f5e4d-883d-42a7-b70b-949e229a7ec4" />
   <Project Path="MySelectionSortProject/MySelectionSortProject.csproj" Id="db7c7b81-0dbb-479a-866b-e50ef8cc742a" />
   <Project Path="MySetProject/MySetProject.csproj" Id="90326893-a539-473d-a2c8-35225c307dd6" />
+  <Project Path="MySortingAlgorithms.Common/MySortingAlgorithms.Common.csproj" Id="a0c434f1-46bf-4067-81ec-3d6cb8c90bf7" />
   <Project Path="MyStackArrayProj/MyStackArrayProj.csproj" Id="7a92a0ee-a66e-4230-9839-d6d7bf40ec71" />
   <Project Path="MyStackProj/MyStackProj.csproj" Id="d60f2df7-fefa-4d8f-8b5e-971517e3fc3d" />
   <Project Path="WpfAppClass/WpfAppClass.csproj" Id="4dbeef0d-f998-4f00-b0c2-4dfd304eea5c" />

@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MySortingAlgorithms.Common\MySortingAlgorithms.Common.csproj" />
+  </ItemGroup>
+
 </Project>
