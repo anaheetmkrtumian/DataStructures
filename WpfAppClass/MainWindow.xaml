@@ -1,4 +1,4 @@
-﻿<Window x:Class="Set.MainWindow"
+﻿<Window x:Class="WpfAppClass.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Set Collection" Height="350" Width="625" Loaded="Window_Loaded">
@@ -13,4 +13,6 @@
         <ListBox x:Name="rightMembers" HorizontalAlignment="Left" Height="217" Margin="310,64,0,0" VerticalAlignment="Top" Width="120"/>
         <ListBox x:Name="resultSet" HorizontalAlignment="Left" Height="217" Margin="460,64,0,0" VerticalAlignment="Top" Width="120"/>
     </Grid>
+
 </Window>
+

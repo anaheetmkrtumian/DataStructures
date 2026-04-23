@@ -51,7 +51,7 @@ namespace SetDemo
             }
         }
 
-        private void evaluateButton_Click(object sender, RoutedEventArgs e)
+        private void EvaluateButton_Click(object sender, RoutedEventArgs e)
         {
             if (leftSet.SelectedItem == null || rightSet.SelectedItem == null || operation.SelectedItem == null)
             {

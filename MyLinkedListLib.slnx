@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="ConsoleApp/ConsoleApp.csproj" Id="2e0c6220-90b4-41ab-8779-d3212b2ea5a7" />
   <Project Path="MyBinaryTreeProj/MyBinaryTreeProj.csproj" Id="5d3320a7-6982-4f87-92c6-4305b63a8306" />
+  <Project Path="MyBubbleSortProject/MyBubbleSortProject.csproj" Id="a489328e-b88e-45ea-815f-ca0a479ad8a6" />
   <Project Path="MyHashTableAlgorithmm/MyHashTableAlgorithmm.csproj" Id="ea1140a2-4baa-45d6-87ec-aca70bd3705c" />
   <Project Path="MyLinkedListLib/MyLinkedListLib.csproj" />
   <Project Path="MyPostfixCalculatorProj/MyPostfixCalculatorProj.csproj" Id="93c08ed9-618e-41dc-80f1-0f63acc6543a" />
@@ -9,5 +10,5 @@
   <Project Path="MySetProject/MySetProject.csproj" Id="90326893-a539-473d-a2c8-35225c307dd6" />
   <Project Path="MyStackArrayProj/MyStackArrayProj.csproj" Id="7a92a0ee-a66e-4230-9839-d6d7bf40ec71" />
   <Project Path="MyStackProj/MyStackProj.csproj" Id="d60f2df7-fefa-4d8f-8b5e-971517e3fc3d" />
-  <Project Path="WpfApp/WpfApp.csproj" Id="228d0607-a126-4170-8b8c-ce9697226859" />
+  <Project Path="WpfAppClass/WpfAppClass.csproj" Id="4dbeef0d-f998-4f00-b0c2-4dfd304eea5c" />
 </Solution>
